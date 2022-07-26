@@ -28,7 +28,7 @@ $ python MoviesDB.py
 
 # Features
 1) Dynamic User Input can be given
-    ![User Prompt](/blob/master/Output/userprompt.png) 
+    ![User Prompt](/Output/userprompt.png) 
     * 0 - Break the program
     * 1 - Insert new values into the table given by User
     ![Adding Data](output/addingdata.png)
