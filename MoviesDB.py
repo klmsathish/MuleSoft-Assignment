@@ -29,17 +29,16 @@ print("\n\n")
 # SELECT query with parameter like actor name to select movies based on the actor's name
 sqlite_select_query = """SELECT * from movies where Lead_Actor = 'Suriya'"""
 cursor.execute(sqlite_select_query)
-records = cursor.fetchall()
+records_select = cursor.fetchall()
 print("Actor Name Customized")
-print(pd.DataFrame(records,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
+print(pd.DataFrame(records_select,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
 print("\n\n")
 # SELECT query with parameter like director name to select movies based on the directors's name
 sqlite_select_query = """SELECT * from movies where Director_Name = 'Mani Ratnam'"""
 cursor.execute(sqlite_select_query)
-records = cursor.fetchall()
+records_select = cursor.fetchall()
 print("Director Name Customized")
-print(pd.DataFrame(records,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
-
+print(pd.DataFrame(records_select,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
 # User Customization
 print("Enter 0 exit")
 print("Enter 1 to insert new movie details")
@@ -62,4 +61,4 @@ while True:
         query = input()
         cursor.execute(query)
         records = cursor.fetchall()
-        print(pd.DataFrame(records,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
+        print(pd.DataFrame(records_select,columns = ["ID","Movie_Name","Lead_Actor","Lead_Actress","Director_Name","Year_Of_Release"]))
