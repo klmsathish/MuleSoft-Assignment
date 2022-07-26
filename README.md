@@ -28,7 +28,9 @@ $ python MoviesDB.py
 
 # Features
 1) Dynamic User Input can be given
+    ![User Prompt](output/userpromt.png) 
     * 0 - Break the program
     * 1 - Insert new values into the table given by User
+    ![Adding Data](output/addingdata.png)
     * 2 - Output the records based on Select query given by user
-
+    ![Accessing Data](output/selectdata.png)
