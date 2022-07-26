@@ -9,7 +9,7 @@ db = sqlite3.connect('../DB/interesting_movies.db')
 cursor = db.cursor()
 
 # Creating Tables
-# cursor.execute('''CREATE TABLE movies(id INTEGER PRIMARY KEY, Movie_Name TEXT, Lead_Actor TEXT, Lead_Actress TEXT, Director_Name TEXT, Year_Of_Release YEAR)''')
+cursor.execute('''CREATE TABLE movies(id INTEGER PRIMARY KEY, Movie_Name TEXT, Lead_Actor TEXT, Lead_Actress TEXT, Director_Name TEXT, Year_Of_Release YEAR)''')
 # Inserting Data into tables
 cursor.execute('''INSERT INTO movies(id, Movie_Name, Lead_Actor, Lead_Actress, Director_Name,Year_Of_Release) VALUES(1,"Vikram Vedha","Vijay Sethupathi","Shraddha Srinath","Pushkar",2017)''')
 cursor.execute('''INSERT INTO movies(id, Movie_Name, Lead_Actor, Lead_Actress, Director_Name,Year_Of_Release) VALUES(2,"Thalapathi","Rajinikanth","Shobana","Mani Ratnam",1991)''')
